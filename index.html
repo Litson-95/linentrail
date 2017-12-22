@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500" rel="stylesheet">
+    <script src="https://use.fontawesome.com/69c2c3e056.js"></script>
+</head>
+
+<body>
+
+    <div style="background:#03336f;width:100%;display:flex;">
+        <a class="brand-logo"><img style="height:65px;padding:15px" src="img/logo.png"></a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down navbar-items"></ul>
+        <a class="linkbutton" href="#">Home</a>
+        <a style="display:flex;" class="linkbutton">Categories<i class="material-icons right">arrow_drop_down_circle</i></a>
+        <div style="width:100%;display:flex;margin-left:10px;margin-top:5px;margin-right:10px;">
+            <input style="color:#e0e0e0;" placeholder="Search Here..." type="text" class="validate">
+            <a class="waves-effect waves-light btn " style="background: #e0e0e0;margin-left:5px;margin-top:9px;border-radius:100px "><i class="material-icons "style="color:#03336f;font-size: 25px;">search</i></a>
+        </div>
+        <a class="linkbutton" href="#"><i class="material-icons "style="color:#e0e0e0;font-size: 25px;">local_grocery_store</i></a>
+        <a data-activates='dropdown1' style="display:flex;" data-constrainWidth="false" class="linkbutton dropdown-button" href="#"><i class="material-icons "style="color:#e0e0e0;font-size: 25px;">person arrow_drop_down</i></a>
+    </div>
+
+    <!-- Dropdown Structure -->
+    <ul style="margin-top:71px;color:#03336f" !Important; id='dropdown1' class='dropdown-content'>
+        <li><a href="#!"><i class="fa fa-facebook-official"aria-hidden="true"></i>Login with Facebook</a></li>
+        <li><a href="#!"><i class="fa fa-google-plus-official" aria-hidden="true"></i>Sign in with Google+</a></li>
+        <li><a href="#!">Login</a></li>
+        <li><a href="#!">Sign Up</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Contact Us</a></li>
+
+    </ul>
+
+
+
+    <div class="row" style="margin-top:3rem;width:90%;">
+        <div class="col s12 m3 l3">
+            <div>
+                <div class="card profile-wall" style="text-align:Center;padding-top:1rem;"><a class="text-profile" style="cursor:pointer;">Categories</a></div>
+                <div class="card profile-matter">
+                    <div class="text-profile;" style="padding:20px;">
+                        <div>
+                            <a style="color:#03336f;cursor:pointer;margin-left:1rem;">Men</a>
+                        </div>
+                        <div><a style="color:#000000;cursor:pointer;margin-left:2rem;">Category-1</a></div>
+                        <div><a style="color:#000000;cursor:pointer;margin-left:2rem;">Category-1</a></div>
+                        <div><a style="color:#000000;cursor:pointer;margin-left:2rem;">Category-1</a></div>
+                        <div><a style="color:#000000;cursor:pointer;margin-left:2rem;">Category-1</a></div>
+                        <div><a style="color:#000000;cursor:pointer;margin-left:2rem;">Category-1</a></div>
+                        <div><a style="color:#000000;cursor:pointer;margin-left:2rem;">Category-1</a></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div style="margin-top:2rem;">
+                    <div class="card profile-wall" style="text-align:Center;padding-top:1rem;"><a class="text-profile" style="cursor:pointer;">Price</a></div>
+                    <div class="card profile-matter">
+                        <div class="text-profile;" style="padding:20px;">
+                            <form action="#">
+                                <p style="margin-left:2rem;">
+                                    <input name="group1" type="radio" id="test1" />
+                                    <label for="test1">Less than 1000</label>
+                                </p>
+                                <p style="margin-left:2rem;">
+                                    <input name="group1" type="radio" id="test2" />
+                                    <label for="test2">1000 - 2000</label>
+                                </p>
+                                <p style="margin-left:2rem;">
+                                    <input name="group1" type="radio" id="test3" />
+                                    <label for="test3">2000 - 3000</label>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div style="margin-top:2rem;">
+                    <div class="card profile-wall" style="text-align:Center;padding-top:1rem;"><a class="text-profile" style="cursor:pointer;">Colours</a></div>
+                    <div class="card profile-matter">
+                        <div class="text-profile;" style="padding:20px;">
+                            <form action="#">
+                                <p style="margin-left:2rem;">
+                                    <input name="group2" type="radio" id="test4" />
+                                    <label for="test4">Red</label>
+                                </p>
+                                <p style="margin-left:2rem;">
+                                    <input name="group2" type="radio" id="test5" />
+                                    <label for="test5">Black</label>
+                                </p>
+                                <p style="margin-left:2rem;">
+                                    <input name="group2" type="radio" id="test6" />
+                                    <label for="test6">Green</label>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col s12 m6 l9">
+            <div class="card add-post">
+                <h4>Men's</h4>
+                <p>lorem ipsum lorem ipsum</p>
+            </div>
+        </div>
+        <div class="col s12 m6 l9">
+            <div class="card add-post">
+
+            </div>
+        </div>
+
+
+
+
+        <div class="col s12 m6 l3">
+            <div style="box-shadow: 0px 2px 35px 0px rgba(0, 0, 0, 0.15);padding-bottom:2rem;margin-bottom:0.5rem;margin-top:0.5rem;">
+                <img class="post-image" src="https://scontent.fcok1-1.fna.fbcdn.net/v/t45.5328-0/c0.136.552.552/p552x414/15729491_1250995358323230_2481027045816008704_n.jpg?oh=bcfe18f7ba4bebe9c576b610a50c2e9d&oe=5AD3D933" style="width:100%;margin-top:0px;" alt="">
+                <center>
+                    <h5>Lorem Ipsum</h5>
+
+                    <a class="waves-effect waves-light btn " style="color:#000000;background: #e0e0e0;margin-left:5px;margin-top:9px;border-radius:2px "><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    <a class="waves-effect waves-light btn " style="color:#e0e0e0;background: #03336f;margin-left:5px;margin-top:9px;border-radius:2px ">Buy now</a>
+                </center>
+            </div>
+        </div>
+
+
+
+        <div class="col s12 m6 l3">
+            <div style="box-shadow: 0px 2px 35px 0px rgba(0, 0, 0, 0.15);padding-bottom:2rem;margin-bottom:0.5rem;margin-top:0.5rem;">
+                <img class="post-image" src="https://scontent.fcok1-1.fna.fbcdn.net/v/t45.5328-0/c0.136.552.552/p552x414/15729491_1250995358323230_2481027045816008704_n.jpg?oh=bcfe18f7ba4bebe9c576b610a50c2e9d&oe=5AD3D933" style="width:100%;margin-top:0px;" alt="">
+                <center>
+                    <h5>Lorem Ipsum</h5>
+
+                    <a class="waves-effect waves-light btn " style="color:#000000;background: #e0e0e0;margin-left:5px;margin-top:9px;border-radius:2px "><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    <a class="waves-effect waves-light btn " style="color:#e0e0e0;background: #03336f;margin-left:5px;margin-top:9px;border-radius:2px ">Buy now</a>
+                </center>
+            </div>
+        </div>
+
+
+        <div class="col s12 m6 l3">
+            <div style="box-shadow: 0px 2px 35px 0px rgba(0, 0, 0, 0.15);padding-bottom:2rem;margin-bottom:0.5rem;margin-top:0.5rem;">
+                <img class="post-image" src="https://scontent.fcok1-1.fna.fbcdn.net/v/t45.5328-0/c0.136.552.552/p552x414/15729491_1250995358323230_2481027045816008704_n.jpg?oh=bcfe18f7ba4bebe9c576b610a50c2e9d&oe=5AD3D933" style="width:100%;margin-top:0px;" alt="">
+                <center>
+                    <h5>Lorem Ipsum</h5>
+
+                    <a class="waves-effect waves-light btn " style="color:#000000;background: #e0e0e0;margin-left:5px;margin-top:9px;border-radius:2px "><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    <a class="waves-effect waves-light btn " style="color:#e0e0e0;background: #03336f;margin-left:5px;margin-top:9px;border-radius:2px ">Buy now</a>
+                </center>
+            </div>
+        </div>
+
+
+        <div class="col s12 m6 l3">
+            <div style="box-shadow: 0px 2px 35px 0px rgba(0, 0, 0, 0.15);padding-bottom:2rem;margin-bottom:0.5rem;margin-top:0.5rem;">
+                <img class="post-image" src="https://scontent.fcok1-1.fna.fbcdn.net/v/t45.5328-0/c0.136.552.552/p552x414/15729491_1250995358323230_2481027045816008704_n.jpg?oh=bcfe18f7ba4bebe9c576b610a50c2e9d&oe=5AD3D933" style="width:100%;margin-top:0px;" alt="">
+                <center>
+                    <h5>Lorem Ipsum</h5>
+
+                    <a class="waves-effect waves-light btn " style="color:#000000;background: #e0e0e0;margin-left:5px;margin-top:9px;border-radius:2px "><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    <a class="waves-effect waves-light btn " style="color:#e0e0e0;background: #03336f;margin-left:5px;margin-top:9px;border-radius:2px ">Buy now</a>
+                </center>
+            </div>
+        </div>
+
+        <div class="col s12 m6 l3">
+            <div style="box-shadow: 0px 2px 35px 0px rgba(0, 0, 0, 0.15);padding-bottom:2rem;margin-bottom:0.5rem;margin-top:0.5rem;">
+                <img class="post-image" src="https://scontent.fcok1-1.fna.fbcdn.net/v/t45.5328-0/c0.136.552.552/p552x414/15729491_1250995358323230_2481027045816008704_n.jpg?oh=bcfe18f7ba4bebe9c576b610a50c2e9d&oe=5AD3D933" style="width:100%;margin-top:0px;" alt="">
+                <center>
+                    <h5>Lorem Ipsum</h5>
+
+                    <a class="waves-effect waves-light btn " style="color:#000000;background: #e0e0e0;margin-left:5px;margin-top:9px;border-radius:2px "><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    <a class="waves-effect waves-light btn " style="color:#e0e0e0;background: #03336f;margin-left:5px;margin-top:9px;border-radius:2px ">Buy now</a>
+                </center>
+            </div>
+        </div>
+
+
+
+</body>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.tooltipped').tooltip({
+            delay: 50
+        });
+    });
+</script>
+
+</html>
