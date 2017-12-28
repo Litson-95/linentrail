@@ -11,6 +11,10 @@ body {
     display: none;
 }
 
+.mobonly {
+    display: none;
+}
+
 .linkbutton {
     color: #e0e0e0;
     padding-top: 22.5px;
@@ -29,6 +33,10 @@ body {
     transition-duration: 0.4s;
 }
 
+.marg {
+    margin-top: 7rem;
+}
+
 @media (max-width:800px) {
     .nomob {
         display: none;
@@ -38,6 +46,12 @@ body {
     }
     .nomobview {
         display: none;
+    }
+    .mobonly {
+        display: inherit;
+    }
+    .marg {
+        margin-top: 5rem;
     }
 }
 
