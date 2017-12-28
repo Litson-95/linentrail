@@ -14,7 +14,7 @@
 
 <body>
 
-    <div style="background:#03336f;width:100%;display:flex;">
+    <div class="nomob" style="background:#03336f;width:100%;">
         <a class="brand-logo"><img style="height:65px;padding:15px" src="img/logo.png"></a>
         <ul id="nav-mobile" class="left hide-on-med-and-down navbar-items"></ul>
         <a class="linkbutton" href="#">Home</a>
@@ -26,6 +26,39 @@
         <a class="linkbutton" href="#"><i class="material-icons "style="color:#e0e0e0;font-size: 25px;">local_grocery_store</i></a>
         <a data-activates='dropdown1' style="display:flex;" data-constrainWidth="false" class="linkbutton dropdown-button" href="#"><i class="material-icons "style="color:#e0e0e0;font-size: 25px;">person arrow_drop_down</i></a>
     </div>
+
+
+    <div class="mob" style="background:#03336f;width:100%;margin:0 auto;">
+        <div>
+
+            <ul id="slide-out" class="side-nav">
+                <li><a class="waves-effect" href="#!">Home</a></li>
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div style="padding-left:2.3rem;" class="collapsible-header">Categories</div>
+                        <div class="collapsible-body"><a style="width:22rem;" class="waves-effect" href="#!">Men</a></div>
+                        <div class="collapsible-body"><a style="width:22rem;" class="waves-effect" href="#!">Women</a></div>
+                        <div class="collapsible-body"><a style="width:22rem;" class="waves-effect" href="#!">Children</a></div>
+                    </li>
+                </ul>
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div style="padding-left:2.3rem;" class="collapsible-header">Price</div>
+                        <div class="collapsible-body"><a style="width:22rem;" class="waves-effect" href="#!">Less than 1000</a></div>
+                        <div class="collapsible-body"><a style="width:22rem;" class="waves-effect" href="#!">1000 - 2000</a></div>
+                        <div class="collapsible-body"><a style="width:22rem;" class="waves-effect" href="#!">2000 - 3000</a></div>
+                    </li>
+                </ul>
+                <li><a class="waves-effect" href="#!">Login/Signup</a></li>
+                <li><a class="waves-effect" href="#!">Contact Us</a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons linkbutton">menu</i></a>
+        </div>
+        <div style="margin-left:4rem;">
+            <a class="brand-logo"><img style="height:65px;padding:15px" src="img/logo.png"></a>
+        </div>
+    </div>
+
 
     <!-- Dropdown Structure -->
     <ul style="margin-top:71px;color:#03336f" !Important; id='dropdown1' class='dropdown-content'>
@@ -42,7 +75,7 @@
 
     <div class="row" style="margin-top:3rem;width:90%;">
         <div class="col s12 m3 l3">
-            <div>
+            <div class="nomobview">
                 <div class="card profile-wall" style="text-align:Center;padding-top:1rem;"><a class="text-profile" style="cursor:pointer;">Categories</a></div>
                 <div class="card profile-matter">
                     <div class="text-profile;" style="padding:20px;">
@@ -58,7 +91,7 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="nomobview">
                 <div style="margin-top:2rem;">
                     <div class="card profile-wall" style="text-align:Center;padding-top:1rem;"><a class="text-profile" style="cursor:pointer;">Price</a></div>
                     <div class="card profile-matter">
@@ -81,7 +114,7 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="nomobview">
                 <div style="margin-top:2rem;">
                     <div class="card profile-wall" style="text-align:Center;padding-top:1rem;"><a class="text-profile" style="cursor:pointer;">Colours</a></div>
                     <div class="card profile-matter">
@@ -189,6 +222,9 @@
 
 
 </body>
+<script>
+    $(".button-collapse").sideNav();
+</script>
 <script type="text/javascript">
     $(document).ready(function() {
         $('.tooltipped').tooltip({
