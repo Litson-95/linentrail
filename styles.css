@@ -3,6 +3,14 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.nomob {
+    display: flex;
+}
+
+.mob {
+    display: none;
+}
+
 .linkbutton {
     color: #e0e0e0;
     padding-top: 22.5px;
@@ -21,14 +29,15 @@ body {
     transition-duration: 0.4s;
 }
 
-@media (max-width:900px) {
-    .side-ads {
-        display: none !important;
+@media (max-width:800px) {
+    .nomob {
+        display: none;
     }
-    .spacer-number {
-        float: left;
-        margin-left: 8px !important;
-        margin-right: 8px !important;
+    .mob {
+        display: flex;
+    }
+    .nomobview {
+        display: none;
     }
 }
 
