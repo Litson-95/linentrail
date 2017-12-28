@@ -14,7 +14,7 @@
 
 <body>
 
-    <div class="nomob" style="background:#03336f;width:100%;">
+    <div class="nomob" style="background:#03336f;width:100%;position:fixed;z-index:99;margin-top:-7rem;">
         <a class="brand-logo"><img style="height:65px;padding:15px" src="img/logo.png"></a>
         <ul id="nav-mobile" class="left hide-on-med-and-down navbar-items"></ul>
         <a class="linkbutton" href="#">Home</a>
@@ -28,7 +28,7 @@
     </div>
 
 
-    <div class="mob" style="background:#03336f;width:100%;margin:0 auto;">
+    <div class="mob" style="background:#03336f;width:100%;margin:0 auto;position:fixed;z-index:99;">
         <div>
 
             <ul id="slide-out" class="side-nav">
@@ -58,6 +58,21 @@
             <a class="brand-logo"><img style="height:65px;padding:15px" src="img/logo.png"></a>
         </div>
     </div>
+    <center>
+        <div class="mobonly" style="width:80%;">
+            <div style="width:100%;display:flex;margin-left:10px;margin-right:10px;height:72px;">
+            </div>
+        </div>
+    </center>
+
+    <center>
+        <div class="mobonly" style="width:100%;position:fixed;background:#ffff;z-index:98;">
+            <div style="width:80%;display:flex;margin-left:10px;margin-right:10px;">
+                <input style="color:#e0e0e0;" placeholder="Search Here..." type="text" class="validate">
+                <a class="waves-effect waves-light btn " style="background: #e0e0e0;margin-left:5px;margin-top:9px;border-radius:100px "><i class="material-icons "style="color:#03336f;font-size: 25px;">search</i></a>
+            </div>
+        </div>
+    </center>
 
 
     <!-- Dropdown Structure -->
@@ -73,7 +88,7 @@
 
 
 
-    <div class="row" style="margin-top:3rem;width:90%;">
+    <div class="row marg" style="width:90%;">
         <div class="col s12 m3 l3">
             <div class="nomobview">
                 <div class="card profile-wall" style="text-align:Center;padding-top:1rem;"><a class="text-profile" style="cursor:pointer;">Categories</a></div>
@@ -146,7 +161,7 @@
                 <p>lorem ipsum lorem ipsum</p>
             </div>
         </div>
-        <div class="col s12 m6 l9">
+        <div class="col s12 m6 l9 nomobview">
             <div class="card add-post">
 
             </div>
